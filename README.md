@@ -31,4 +31,5 @@ We welcome contributions to the UniBias project. If you’re interested in colla
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is proprietary software. All rights reserved. See the [LICENSE](LICENSE) file for details.
+No part of this software may be reproduced or used without explicit permission from the copyright holder.
