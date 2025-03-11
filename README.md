@@ -2,33 +2,33 @@
 
 ## Vision
 
-UniBias is a collection of various tools designed to keep the distractions, narratives, and influences of the internet away from you. The main vision of UniBias is to ensure that your thoughts are actually your own, unaffected by the constant stream of information and opinions that saturate the digital world.
+UniBias is a suite of tools designed to shield you from the endless distractions, biased narratives, and pervasive influences of the digital world. Our vision is to empower you to think freely, ensuring that your thoughts remain authentically yours and untainted by the constant stream of external information.
 
 ## Purpose
 
-In an era of information overload and algorithmic curation, our minds are constantly shaped by external forces that we may not even be aware of. UniBias aims to:
+In today’s era of information overload and algorithmic curation, our minds are continuously shaped by external forces we may not even notice. UniBias aims to:
 
-- Reduce digital distractions that fragment your focus
-- Filter out biased narratives that might influence your thinking
-- Provide tools to maintain your intellectual autonomy online
-- Help you distinguish between your authentic thoughts and those influenced by digital content
+- **Minimize Digital Distractions:** Help you stay focused by reducing interruptions.
+- **Counteract Biased Narratives:** Enable you to identify and filter out content that might sway your thinking.
+- **Promote Intellectual Autonomy:** Provide tools that empower you to maintain mental clarity and independent thought.
+- **Enhance Self-Awareness:** Assist you in distinguishing your genuine ideas from those influenced by digital content.
 
 ## Tools Included
 
-UniBias includes several tools to help you maintain mental clarity and focus:
+UniBias offers a range of tools to support your journey towards enhanced mental clarity and focus:
 
-- Focus Tracker: Monitors your digital activity and helps you stay on task (work in progess.. you can try it now!)
-- Content Analysis: Identifies potential bias in the content you consume   (upcomming..)
-- Digital Wellbeing Tools: Helps manage your digital consumption habits    (upcomming..)
+- **Focus Tracker:** Monitors your digital activity and helps you stay on task (currently in progress—try it now!).
+- **Content Analysis:** Evaluates the content you consume to identify potential biases (coming soon).
+- **Digital Wellbeing Tools:** Assists in managing your digital consumption habits (upcoming).
 
 ## Getting Started
 
-See the individual tool directories for specific setup instructions and requirements.
+For detailed setup instructions and requirements, please refer to the documentation in each tool's directory.
 
 ## Contributing
 
-If you're interested in contributing to the UniBias project, please reachout to owner.
+We welcome contributions to the UniBias project. If you’re interested in collaborating or have suggestions, please reach out to the project owner.
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License. See the LICENSE file for details.
