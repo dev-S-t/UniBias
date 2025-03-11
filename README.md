@@ -17,9 +17,9 @@ In an era of information overload and algorithmic curation, our minds are consta
 
 UniBias includes several tools to help you maintain mental clarity and focus:
 
-- Focus Tracker: Monitors your digital activity and helps you stay on task
-- Content Analysis: Identifies potential bias in the content you consume
-- Digital Wellbeing Tools: Helps manage your digital consumption habits
+- Focus Tracker: Monitors your digital activity and helps you stay on task (work in progess.. you can try it now!)
+- Content Analysis: Identifies potential bias in the content you consume   (upcomming..)
+- Digital Wellbeing Tools: Helps manage your digital consumption habits    (upcomming..)
 
 ## Getting Started
 
@@ -27,7 +27,7 @@ See the individual tool directories for specific setup instructions and requirem
 
 ## Contributing
 
-If you're interested in contributing to the UniBias project, please read our contributing guidelines to get started.
+If you're interested in contributing to the UniBias project, please reachout to owner.
 
 ## License
 
