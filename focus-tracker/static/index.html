@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Tracker</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div id="welcome-screen" class="screen active">
+        <div class="container">
+            <h1>Focus Tracker</h1>
+            <div class="quote-container">
+                <p id="motivational-quote">"Focus on being productive instead of busy."</p>
+                <p id="quote-author">- Tim Ferriss</p>
+            </div>
+            
+            <p class="description">Set a goal and duration to start tracking your focus.</p>
+            
+            <div class="form-container">
+                <input type="text" id="goal-input" placeholder="What do you want to focus on?" class="text-input">
+                
+                <div class="timer-settings">
+                    <div class="setting">
+                        <label for="duration-input">Session Duration (minutes)</label>
+                        <input type="number" id="duration-input" min="1" max="120" value="25" class="number-input">
+                    </div>
+                    
+                    <div class="setting">
+                        <label for="interval-input">Screenshot Interval (seconds)</label>
+                        <input type="range" id="interval-input" min="5" max="60" value="10" class="slider-input">
+                        <span id="interval-value">10s</span>
+                    </div>
+                </div>
+                
+                <!-- Privacy section with clearer labeling -->
+                <div class="privacy-section">
+                    <h3 class="privacy-heading">Privacy Options</h3>
+                    <div class="toggle-container">
+                        <span class="toggle-label">Use my own Google API key for analysis</span>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="privacy-toggle">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    
+                    <!-- Update the API key container with more helpful information -->
+                    <div id="api-key-container">
+                        <input type="text" id="user-api-key" placeholder="Enter your Google API key" class="text-input">
+                        <p class="api-key-info">Your API key is stored locally on your device only.</p>
+                        <p class="api-key-help">
+                            You need a valid <strong>Google AI Studio API key</strong> with access to the Gemini models.
+                            <br>
+                            <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener">Get an API key</a>
+                        </p>
+                    </div>
+                </div>
+                
+                <button id="start-btn" class="btn primary-btn">Start Focus Session</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="session-screen" class="screen">
+        <div class="session-container">
+            <!-- Timer is the main focus -->
+            <div class="timer-container">
+                <div id="timer" class="timer">25:00</div>
+            </div>
+            
+            <!-- Goal display -->
+            <div class="goal-container">
+                <p>Focusing on: <span id="current-goal">Your Goal</span></p>
+            </div>
+            
+            <!-- Status display with explanation -->
+            <div class="status-container">
+                <p id="alert-status" class="status-heading">Focus Status: Normal</p>
+                <p id="alert-message" class="status-explanation">Monitoring your focus...</p>
+            </div>
+            
+            <!-- Controls -->
+            <div class="session-controls">
+                <button id="pause-btn" class="control-btn">Pause</button>
+                <button id="stop-btn" class="control-btn">Stop</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

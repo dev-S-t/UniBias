@@ -1,0 +1,25 @@
+# Web framework and server
+FastAPI==0.103.0
+uvicorn==0.23.2
+
+# Image processing
+pillow==10.0.0
+numpy<2.0  # Added explicit NumPy version constraint for OpenCV compatibility
+opencv-python==4.8.0.76
+pyautogui==0.9.54
+
+# API interaction
+httpx==0.24.1
+google-generativeai==0.3.1
+
+# Environment and configuration
+python-dotenv==1.0.0
+pydantic==2.3.0
+pydantic-settings==2.0.3  # For BaseSettings
+
+# Testing
+pytest==7.4.0
+pytest-asyncio==0.21.1
+
+# Utilities
+python-multipart==0.0.6
