@@ -1,6 +1,8 @@
 # Focus Tracker
 
 Focus Tracker is a FastAPI application designed to help users stay on track with their goals by analyzing periodic screenshots. The application monitors user activity and alerts them if they stray from their set focus.
+![diagram (1)](https://github.com/user-attachments/assets/de763114-8e06-492a-96af-d073055de51e)
+
 
 ## Project Structure
 
