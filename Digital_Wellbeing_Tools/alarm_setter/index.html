@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Setter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Alarm Setter</h1>
+
+        <div class="sunrise-sunset-section">
+            <h2>Sunrise & Sunset Times (Manual Entry)</h2>
+            <div>
+                <label for="sunriseTimeInput">Sunrise Time:</label>
+                <input type="time" id="sunriseTimeInput">
+            </div>
+            <div>
+                <label for="sunsetTimeInput">Sunset Time:</label>
+                <input type="time" id="sunsetTimeInput">
+            </div>
+            <button id="saveSunriseSunsetButton">Save Sunrise/Sunset</button>
+            <p id="displaySunriseSunset"></p>
+        </div>
+
+        <div class="add-alarm-section">
+            <h2>Add New Alarm</h2>
+            <div>
+                <label for="alarmLabelInput">Alarm Label:</label>
+                <input type="text" id="alarmLabelInput" placeholder="e.g., Wake up">
+            </div>
+            <div>
+                <label for="alarmTypeSelect">Alarm Type:</label>
+                <select id="alarmTypeSelect">
+                    <option value="fixed">Fixed Time</option>
+                    <option value="sunrise_relative">Relative to Sunrise</option>
+                    <option value="sunset_relative">Relative to Sunset</option>
+                </select>
+            </div>
+            <div id="fixedTimeSettings">
+                <label for="alarmTimeInput">Time:</label>
+                <input type="time" id="alarmTimeInput">
+            </div>
+            <div id="relativeTimeSettings" style="display:none;">
+                <label for="alarmOffsetInput">Offset (minutes):</label>
+                <input type="number" id="alarmOffsetInput" placeholder="e.g., 30 or -30">
+                <span>(Use positive for 'after', negative for 'before')</span>
+            </div>
+            <button id="addAlarmButton">Add Alarm</button>
+        </div>
+
+        <div class="alarms-display-section">
+            <h2>Upcoming Alarms</h2>
+            <ul id="alarmsList">
+                <!-- Alarms will be populated here -->
+            </ul>
+        </div>
+    </div>
+
+    <audio id="alarmAudio" src="alarm_sound.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.settings-section, .usage-display-section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="number"], textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 60px;
+    resize: vertical;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#removeCategory {
+    background-color: #dc3545;
+}
+
+#removeCategory:hover {
+    background-color: #c82333;
+}
+
+#usageList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#usageList li {
+    background-color: #e9ecef;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#usageList li .category-name {
+    font-weight: bold;
+}
+
+#usageList li .usage-bar-container {
+    width: 60%;
+    background-color: #ccc;
+    border-radius: 4px;
+    height: 20px;
+    overflow: hidden;
+}
+
+#usageList li .usage-bar {
+    height: 100%;
+    background-color: #28a745; /* Green */
+    width: 0%; /* Will be set by JS */
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    font-size: 0.8em;
+}
+
+#usageList li .usage-bar.near-cap {
+    background-color: #ffc107; /* Yellow */
+}
+
+#usageList li .usage-bar.over-cap {
+    background-color: #dc3545; /* Red */
+}
+
+/* Basic styling for notifications (though actual notifications are browser-native) */
+.usage-notification {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.notification-warning {
+    background-color: #ffc107; /* Yellow */
+    color: #333;
+}
+
+.notification-error {
+    background-color: #dc3545; /* Red */
+}

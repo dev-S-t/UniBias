@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journaling Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Journal</h1>
+
+        <div class="editor-section">
+            <h2>Today's Entry (<span id="currentDateDisplay"></span>)</h2>
+            <input type="date" id="entryDateSelector">
+            <textarea id="journalEditor" placeholder="Start writing..."></textarea>
+            <button id="saveEntry">Save Entry</button>
+            <button id="newEntry">New Entry for Today</button>
+        </div>
+
+        <div class="entries-section">
+            <h2>Past Entries</h2>
+            <div id="pastEntriesList">
+                <!-- Past entries will be listed here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

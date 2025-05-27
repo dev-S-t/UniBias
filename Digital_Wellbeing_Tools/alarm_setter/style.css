@@ -1,0 +1,143 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    color: #1a237e; /* Dark blue */
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"], input[type="time"], input[type="number"], select {
+    width: calc(100% - 22px); /* Full width minus padding */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+select {
+    width: 100%;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #3949ab; /* Indigo */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #283593; /* Darker Indigo */
+}
+
+.sunrise-sunset-section, .add-alarm-section, .alarms-display-section {
+    margin-bottom: 25px;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.sunrise-sunset-section div, .add-alarm-section div {
+    margin-bottom: 10px;
+}
+
+#displaySunriseSunset {
+    font-style: italic;
+    color: #3949ab;
+    margin-top: 10px;
+}
+
+#relativeTimeSettings span {
+    font-size: 0.85em;
+    color: #666;
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+#alarmsList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#alarmsList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+#alarmsList li:last-child {
+    border-bottom: none;
+}
+
+#alarmsList .alarm-details {
+    flex-grow: 1;
+}
+
+#alarmsList .alarm-label {
+    font-weight: bold;
+}
+
+#alarmsList .alarm-time {
+    font-size: 0.9em;
+    color: #555;
+}
+#alarmsList .alarm-time.calculated {
+    font-style: italic;
+}
+
+
+#alarmsList .alarm-actions button {
+    margin-left: 8px;
+    padding: 6px 10px;
+    font-size: 0.9em;
+}
+
+#alarmsList .alarm-actions .delete-alarm-button {
+    background-color: #d32f2f; /* Red */
+}
+#alarmsList .alarm-actions .delete-alarm-button:hover {
+    background-color: #c62828; /* Darker Red */
+}
+
+#alarmsList .alarm-actions .toggle-alarm-button.deactivated {
+    background-color: #757575; /* Grey */
+}
+#alarmsList .alarm-actions .toggle-alarm-button.deactivated:hover {
+    background-color: #616161;
+}
