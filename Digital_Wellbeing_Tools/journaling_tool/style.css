@@ -1,0 +1,120 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+h1, h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.editor-section {
+    margin-bottom: 30px;
+}
+
+#currentDateDisplay {
+    font-weight: normal;
+    font-size: 0.9em;
+    color: #555;
+}
+
+#entryDateSelector {
+    display: block;
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.95em;
+}
+
+#journalEditor {
+    width: calc(100% - 20px); /* Adjust for padding */
+    min-height: 200px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1em;
+    resize: vertical;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#newEntry {
+    background-color: #2ecc71;
+}
+
+#newEntry:hover {
+    background-color: #27ae60;
+}
+
+.entries-section h2 {
+    margin-bottom: 10px;
+}
+
+#pastEntriesList {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #eee;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #fdfdfd;
+}
+
+.past-entry-item {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.past-entry-item:last-child {
+    border-bottom: none;
+}
+
+.past-entry-item:hover {
+    background-color: #f0f0f0;
+}
+
+.past-entry-item .date {
+    font-weight: bold;
+    color: #3498db;
+    margin-bottom: 5px;
+}
+
+.past-entry-item .snippet {
+    font-size: 0.9em;
+    color: #555;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 95%; /* Ensure it doesn't cause overflow */
+}

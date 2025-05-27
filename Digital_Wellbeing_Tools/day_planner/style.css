@@ -1,0 +1,117 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+}
+
+h1, h2 {
+    color: #343a40;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.date-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.date-navigation button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.95em;
+    transition: background-color 0.2s ease;
+}
+
+.date-navigation button:hover {
+    background-color: #0056b3;
+}
+
+.date-navigation input[type="date"] {
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 0.95em;
+}
+
+#currentDateDisplay {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #495057;
+}
+
+.schedule-container {
+    margin-top: 20px;
+}
+
+#timeSlotsList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#timeSlotsList li {
+    display: flex;
+    align-items: center;
+    padding: 12px 10px;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    margin-bottom: -1px; /* For overlapping borders, creating a table-like look */
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#timeSlotsList li:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#timeSlotsList li:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 0;
+}
+
+#timeSlotsList li:hover {
+    background-color: #f1f3f5;
+}
+
+#timeSlotsList .time-label {
+    flex-basis: 100px; /* Fixed width for time */
+    font-weight: bold;
+    color: #007bff;
+    font-size: 0.9em;
+    text-align: right;
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid #e9ecef;
+}
+
+#timeSlotsList .event-details {
+    flex-grow: 1;
+    font-size: 0.95em;
+    color: #495057;
+}
+
+#timeSlotsList .event-details.empty {
+    color: #adb5bd; /* Lighter text for empty slots */
+    font-style: italic;
+}

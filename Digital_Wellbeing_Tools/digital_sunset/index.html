@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Sunset</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Digital Sunset</h1>
+
+    <div>
+        <h2>Settings</h2>
+        <label for="windDownStart">Wind-down Start Time:</label>
+        <input type="time" id="windDownStart">
+
+        <label for="windDownEnd">Wind-down End Time:</label>
+        <input type="time" id="windDownEnd">
+
+        <label for="restrictedSites">Restricted Sites (comma-separated):</label>
+        <textarea id="restrictedSites" placeholder="e.g., twitter.com,youtube.com"></textarea>
+
+        <button id="saveSettings">Save Settings</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

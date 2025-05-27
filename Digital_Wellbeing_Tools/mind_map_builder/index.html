@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Map Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="toolbar">
+        <button id="addNodeButton">Add Node</button>
+        <button id="connectNodesButton">Connect Nodes</button>
+        <button id="deleteElementButton">Delete Selected</button>
+        <button id="saveMapButton">Save Map</button>
+        <button id="loadMapButton">Load Map</button>
+        <button id="clearMapButton">Clear Map</button>
+        <span id="modeIndicator">Mode: None</span>
+    </div>
+    <canvas id="mindMapCanvas"></canvas>
+    <input type="text" id="nodeTextInput" style="display:none; position:absolute;">
+
+    <script src="script.js"></script>
+</body>
+</html>

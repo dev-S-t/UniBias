@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Day Planner</h1>
+
+        <div class="date-navigation">
+            <button id="prevDayButton">&lt; Previous Day</button>
+            <input type="date" id="datePicker">
+            <button id="nextDayButton">Next Day &gt;</button>
+            <button id="todayButton">Today</button>
+        </div>
+        <h2 id="currentDateDisplay"></h2>
+
+        <div class="schedule-container">
+            <ul id="timeSlotsList">
+                <!-- Time slots will be generated here by script.js -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
